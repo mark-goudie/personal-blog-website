@@ -55,6 +55,12 @@
   border-radius: 9px;
 }
 
+.orchard-caption {
+  font-size: 1.4rem;
+  padding-top: 1.6rem;
+  font-weight: 500;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -72,4 +78,19 @@ hr {
   margin-right: 6px;
   float: left;
   padding: 0 4px;
+}
+
+.author-container {
+  display: flex;
+}
+
+.author-image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.author-txt {
+  padding-left: 2.4rem;
+  font-size: 1.6rem;
 }
