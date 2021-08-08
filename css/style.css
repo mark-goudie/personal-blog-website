@@ -29,9 +29,9 @@ Default:1
 
 /* GENERAL */
 
-@import "/css/general.css";
-@import "/css/blog.css";
-@import "/css/navigation.css";
+@import "../css/general.css";
+@import "../css/blog.css";
+@import "../css/navigation.css";
 
 /* MAIN - HERO SECTION */
 
