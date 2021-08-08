@@ -108,9 +108,8 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-  
 
-  /* Hide Nav */
+    /* Hide Nav */
 
     opacity: 0;
     pointer-events: none;
@@ -144,146 +143,149 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
-}
-
-/* Breakpoint 768px */
-
-@media (max-width: 48em ) {
-
-  .cta-form {
-    grid-template-columns: 1fr;
   }
 
-  .grid--3-cols, .grid--4-cols {
-    grid-template-columns: repeat(2, 1fr);
+  /* Breakpoint 768px */
+
+  @media (max-width: 48em) {
+    .cta-form {
+      grid-template-columns: 1fr;
+    }
+
+    .grid--3-cols,
+    .grid--4-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+      order: 1;
+    }
+
+    .resources-container {
+      order: 2;
+    }
+
+    .social-container {
+      order: 3;
+    }
+
+    .logo-col {
+      order: 4;
+      display: none;
+    }
   }
 
-  .contact-container {
-    order: 1;
-  }
+  /* Breakpoint 560px */
+  @media (max-width: 35em) {
+    /* Index page */
 
-  .resources-container {
-    order: 2;
-  }
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+      grid-template-columns: 1fr;
+    }
 
-  .social-container {
-    order: 3;
-  }
+    .grid {
+      row-gap: 4.8rem;
+    }
 
-  .logo-col {
-    order: 4;
-    display: none;
-  }
-}
+    .hero {
+      padding: 0;
+    }
 
-/* Breakpoint 560px */
-@media (max-width: 35em ) {
-  /* Index page */
-  
-  .grid--2-cols, .grid--3-cols, .grid--4-cols {
-    grid-template-columns: 1fr;
-  }
+    .section-hero {
+      padding: 2.4rem 0 6.4rem 0;
+    }
 
-  .grid {
-    row-gap: 4.8rem;
-  }
+    .heading-primary {
+      font-size: 4.2rem;
+    }
 
-  .hero {
-    padding: 0;
-  }
+    .heading-secondary {
+      font-size: 3.2rem;
+    }
 
-  .section-hero {
-    padding: 2.4rem 0 6.4rem 0;
-  }
+    .hero-description {
+      font-size: 1.8rem;
+    }
 
-  .heading-primary {
-    font-size: 4.2rem;
-  }
+    .h1-articles {
+      font-size: 4.2rem;
+    }
 
-  .heading-secondary {
-    font-size: 3.2rem;
-  }
+    .h2-articles {
+      font-size: 1.6rem;
+      padding: 1.6rem;
+    }
 
-  .hero-description {
-    font-size: 1.8rem;
-  }
+    .section-cta {
+      margin: 2.4rem;
+    }
 
-  .h1-articles {
-    font-size: 4.2rem;
-  }
+    .cta-text-box {
+      padding: 1.2rem 2.4rem 1.2rem 0rem;
+    }
 
-  .h2-articles {
-    font-size: 1.6rem;
-    padding: 1.6rem;
-  }
+    .container {
+      padding: 1.8rem;
+    }
 
-  .section-cta {
-    margin: 2.4rem;
-  }
+    /* Blog Post */
 
-  .cta-text-box {
-    padding: 1.2rem 2.4rem 1.2rem 0rem;
-  }
+    .heading-primary {
+      font-size: 3.6rem;
+    }
 
-  .container {
-    padding: 1.8rem;
-  }
+    .heading-secondary {
+      font-size: 2.4rem;
+    }
 
-  /* Blog Post */
+    .article {
+      padding: 1.8rem 0;
+    }
 
-  .heading-primary {
-    font-size: 3.6rem;
-  }
+    .articles {
+      font-size: 5rem;
+      padding: 5rem 6rem;
+      background-color: #fff;
+    }
 
-  .heading-secondary {
-    font-size: 2.4rem;
-  }
+    .article-text-box {
+      padding: 4.8rem 4.8rem 2.4rem 4.8rem;
+    }
 
-  .article {
-    padding: 1.8rem 0;
-  }
+    .heading-h3 {
+      margin-bottom: 3.2rem;
+      font-size: 1.8rem;
+    }
 
-  .articles {
-    font-size: 5rem;
-    padding: 5rem 6rem;
-    background-color: #fff;
-  }
-  
-  .article-text-box {
-    padding: 4.8rem 4.8rem 2.4rem 4.8rem;
-  }
-  
-  .heading-h3 {
-    margin-bottom: 3.2rem;
-    font-size: 1.8rem;
-  }
-  
-  .article-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 130rem;
-    display: grid;
-    margin: 0 auto;
-    padding: 0;
-    align-items: top;
-    justify-content:left;
-    gap: 4.8rem;
-  }
-  
-  .main-text {
-    width: 100%;
-    font-size: 1.8rem;
-    line-height: 1.5;
-  }
-  
-  .side-blurb {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
-  .container-img {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4.8rem;
+    .article-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 130rem;
+      display: grid;
+      margin: 0 auto;
+      padding: 0;
+      align-items: top;
+      justify-content: left;
+      gap: 4.8rem;
+    }
+
+    .main-text {
+      width: 100%;
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+
+    .side-blurb {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+
+    .container-img {
+      display: flex;
+      flex-direction: column;
+      padding: 0 4.8rem;
+    }
   }
 }
